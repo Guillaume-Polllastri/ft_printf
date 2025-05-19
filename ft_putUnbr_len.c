@@ -6,21 +6,40 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 16:45:14 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/19 13:34:29 by gpollast         ###   ########.fr       */
+/*   Updated: 2025/05/19 16:08:52 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <stdio.h>
 
-int	ft_putUnbr_len(unsigned	int i)
+static int	count_number(unsigned int n)
 {
-	int		len;
+	int	count;
+
+	count = 0;
+	if (n == 0)
+		return (1);
+	while (n > 0)
+	{
+		n = n / 10;
+		count++;
+	}
+	return (count);
+}
+
+static void	ft_putnbr(unsigned int n)
+{
 	char	res;
 
-	len = 0;
-	if (i > 9)
-		ft_putUnbr_len((i / 10));
-	res = (i % 10) + '0';
-	len = len + ft_putchar_len(res);
-	return (len);
+	if (n > 9)
+		ft_putnbr_len((n / 10));
+	res = (n % 10) + '0';
+	ft_putchar_len(res);
+}
+
+int	ft_putUnbr_len(unsigned int n)
+{
+	ft_putnbr(n);
+	return (count_number(n));
 }
