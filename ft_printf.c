@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 15:56:09 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/19 13:27:39 by gpollast         ###   ########.fr       */
+/*   Updated: 2025/05/19 16:17:34 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static	int	convert(char a, va_list ap)
 	if (a == 'd' || a == 'i')
 		return (ft_putnbr_len((int) va_arg(ap, int)));
 	if (a == 'u')
-		return (ft_putUnbr_len((int) va_arg(ap, unsigned int)));
+		return (ft_putunbr_len((int) va_arg(ap, unsigned int)));
 	if (a == 'x')
 		return (ft_puthex_low((int) va_arg(ap, int)));
 	if (a == 'X')

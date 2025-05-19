@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 16:45:14 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/19 16:08:52 by gpollast         ###   ########.fr       */
+/*   Updated: 2025/05/19 16:13:52 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static void	ft_putnbr(unsigned int n)
 	ft_putchar_len(res);
 }
 
-int	ft_putUnbr_len(unsigned int n)
+int	ft_putunbr_len(unsigned int n)
 {
 	ft_putnbr(n);
 	return (count_number(n));

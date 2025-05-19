@@ -6,13 +6,13 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:08:34 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/19 13:28:06 by gpollast         ###   ########.fr       */
+/*   Updated: 2025/05/19 18:17:29 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_puthex_up(const unsigned long n)
+int	ft_puthex_up(unsigned int n)
 {
 	if (n / 16)
 		return (ft_puthex_up((n / 16)) + ft_puthex_up(n % 16));
