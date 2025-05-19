@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 10:04:03 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/19 13:20:21 by gpollast         ###   ########.fr       */
+/*   Updated: 2025/05/19 18:30:04 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int	ft_puthex(const unsigned long n)
 	if (n / 16)
 		return (ft_puthex((n / 16)) + ft_puthex(n % 16));
 	else if (!(n / 10))
-		ft_putchar_len(n + '0');
+		ft_putchar_len((char) n + '0');
 	else
 		ft_putchar_len((char) n - 10 + 'a');
 	return (1);
