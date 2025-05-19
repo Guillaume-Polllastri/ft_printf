@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_len.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guill <guill@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 13:24:15 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/19 15:36:37 by gpollast         ###   ########.fr       */
+/*   Updated: 2025/05/19 21:22:12 by guill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,8 @@ static int	count_number(int n)
 
 static void	ft_putnbr(int n)
 {
-	int		len;
 	char	res;
 
-	len = 0;
 	if (n == -2147483648)
 	{
 		write(1, "-2147483648", 11);
