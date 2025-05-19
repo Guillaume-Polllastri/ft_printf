@@ -6,7 +6,7 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 13:24:15 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/19 15:32:59 by gpollast         ###   ########.fr       */
+/*   Updated: 2025/05/19 15:36:37 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,16 @@ static int	count_number(int n)
 	}
 	if (n == 0)
 		return (1);
+	if (n == -2147483648)
+	{
+		return (11);
+	}
 	while (n > 0)
 	{
 		n = n / 10;
 		count++;
 	}
-	return(count);
+	return (count);
 }
 
 static void	ft_putnbr(int n)
