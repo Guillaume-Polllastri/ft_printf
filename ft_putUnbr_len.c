@@ -6,12 +6,11 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 16:45:14 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/16 17:05:39 by gpollast         ###   ########.fr       */
+/*   Updated: 2025/05/19 13:16:43 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
-#include <stdio.h>
 
 int	ft_putUnbr_len(unsigned int n)
 {

@@ -6,11 +6,10 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 15:56:09 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/19 13:10:53 by gpollast         ###   ########.fr       */
+/*   Updated: 2025/05/19 13:16:28 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "libftprintf.h"
 
 static	int	convert(char a, va_list ap)
