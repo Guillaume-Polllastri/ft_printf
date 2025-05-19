@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_puthex_up.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/13 16:57:46 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/14 11:31:43 by gpollast         ###   ########.fr       */
+/*   Created: 2025/05/19 11:08:34 by gpollast          #+#    #+#             */
+/*   Updated: 2025/05/19 11:15:31 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libftprintf.h"
 
-# include <stdarg.h>
-# include <unistd.h>
-# include <stdlib.h>
-
-int		ft_printf(const char *p_conv, char *str);
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
-
-#endif
+int	ft_puthex_up(const unsigned long n)
+{
+	if (n / 16)
+		return (ft_puthex_up((n / 16)) + ft_puthex_up(n % 16));
+	else if (!(n / 10))
+		ft_putchar_len(n + '0');
+	else
+		ft_putchar_len((char) n - 10 + 'A');
+	return (1);
+}
