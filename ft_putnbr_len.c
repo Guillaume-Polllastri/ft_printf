@@ -1,6 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_len.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/19 13:24:15 by gpollast          #+#    #+#             */
+/*   Updated: 2025/05/19 13:30:54 by gpollast         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-
-#include "libftprintf.h"
+#include "ft_printf.h"
 #include <stdio.h>
 
 static int	count_number(int n)
@@ -15,7 +25,7 @@ static int	count_number(int n)
 		n = n / 10;
 		count++;
 	}
-	return(count);
+	return (count);
 }
 
 static void	ft_putnbr(int n)
@@ -43,5 +53,5 @@ static void	ft_putnbr(int n)
 int	ft_putnbr_len(int n)
 {
 	ft_putnbr(n);
-	return(count_number(n));
+	return (count_number(n));
 }

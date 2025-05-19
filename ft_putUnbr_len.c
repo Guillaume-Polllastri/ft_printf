@@ -6,21 +6,21 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 16:45:14 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/19 13:16:43 by gpollast         ###   ########.fr       */
+/*   Updated: 2025/05/19 13:34:29 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-int	ft_putUnbr_len(unsigned int n)
+int	ft_putUnbr_len(unsigned	int i)
 {
 	int		len;
 	char	res;
 
 	len = 0;
-	if (n > 9)
-		ft_putUnbr_len((n / 10));
-	res = (n % 10) + '0';
+	if (i > 9)
+		ft_putUnbr_len((i / 10));
+	res = (i % 10) + '0';
 	len = len + ft_putchar_len(res);
-	return(len);
+	return (len);
 }

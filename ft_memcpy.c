@@ -6,11 +6,11 @@
 /*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 23:19:40 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/19 13:15:35 by gpollast         ###   ########.fr       */
+/*   Updated: 2025/05/19 13:20:21 by gpollast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
